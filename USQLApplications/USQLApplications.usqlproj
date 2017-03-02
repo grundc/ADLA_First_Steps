@@ -11,7 +11,7 @@
     <Name>USQLApplications</Name>
     <RootNamespace>USQLApplications</RootNamespace>
     <RuntimeVersion>default</RuntimeVersion>
-    <OutputStreamPath>C:\Users\Grund\AppData\Local\USQLDataRoot</OutputStreamPath>
+    <OutputStreamPath>C:\Users\grundc\AppData\Local\USQLDataRoot</OutputStreamPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,10 +22,14 @@
     <OutputPath>bin\Release\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
+    <Script Include="CognitiveServicesImageRecognition.usql" />
     <Script Include="CreateLoadTables.usql" />
     <Script Include="CreatingDBs.usql" />
     <Script Include="USQLandCsharp.usql" />
     <Script Include="SimpleLoadingOperations.usql" />
+    <ScriptCode Include="CognitiveServicesImageRecognition.usql.cs">
+      <DependentUpon>CognitiveServicesImageRecognition.usql</DependentUpon>
+    </ScriptCode>
     <ScriptCode Include="CreateLoadTables.usql.cs">
       <DependentUpon>CreateLoadTables.usql</DependentUpon>
     </ScriptCode>
