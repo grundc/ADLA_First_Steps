@@ -23,12 +23,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Script Include="CognitiveServicesImageRecognition.usql" />
+    <Script Include="CognitiveServicesTextProcessing.usql" />
     <Script Include="CreateLoadTables.usql" />
     <Script Include="CreatingDBs.usql" />
     <Script Include="USQLandCsharp.usql" />
     <Script Include="SimpleLoadingOperations.usql" />
     <ScriptCode Include="CognitiveServicesImageRecognition.usql.cs">
       <DependentUpon>CognitiveServicesImageRecognition.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="CognitiveServicesTextProcessing.usql.cs">
+      <DependentUpon>CognitiveServicesTextProcessing.usql</DependentUpon>
     </ScriptCode>
     <ScriptCode Include="CreateLoadTables.usql.cs">
       <DependentUpon>CreateLoadTables.usql</DependentUpon>
